@@ -1,244 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-/* --- Container --- */
-.container{
-    max-width: 345px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  .container{
+    max-width: 1200px;
     margin: 0 auto;
-}
+  }
+
+/* Cabeçalho */
+
+  .cabecalho{
+    background-color: #117A25;
+    color: #F2F2F2;
+    padding: 10px 0 0;
+  }
+    @media(min-width: 600px){
+        .cabecalho{
+            padding: 30px 0 0;
+        }
+    }
+
+    .cabecalho__mobile{
+      display: flex;
+    }
+    .cabecalho__mobile--imagem{
+        width: 36px;
+        height: 27px;
+        margin-left: 30px;
+    }
+        @media(min-width: 600px){
+            .cabecalho__mobile--imagem{
+            display: none;
+            }
+        }
+
+    .cabecalho__titulo{
+        font-size: 16px;
+        margin: auto 20px;
+        margin-bottom: 5px;
+        padding: 5px;
+        font-weight: inherit;
+    }
+    @media(min-width: 600px){
+        .cabecalho__titulo{
+            font-size: 18px;
+        }
+    }
+    .cabecalho__subtitulo{
+        font-size: 24px;
+        margin: auto 20px;
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+    @media(min-width: 600px){
+        .cabecalho__subtitulo{
+            font-size: 36px;
+        }
+    }
 
 
+/* menu */
 .menu{
-    background-color: #117A25;
-    padding: 20px;
-}
-.hamburguer{
-    display: inline-block;
-    width: 26px;
-    height: 26px;
-    float: left;
-}
-.curso{
-    color: #F2F2F2;
-    font-size: 16px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    display: inline-block;
-    margin-left: 15px;
-}
+    list-style: none;
+    margin-top: 5px;
+    flex-direction: row;
+    background-color: #00420C;
+  }
+    @media(max-width: 600px){
+        .menu{
+            display: none;
+        }
+    }
 
-.curso-nome{
-    color: #F2F2F2;
-    font-size: 24px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: bold;
-    line-height: 28px;
-    margin-left: 35px;
-    padding: 5px;
-    padding-bottom: 10px;
-}
-
-
-
-
-/* --- Conteúdo da página --- */
-
-.titulo{
-    color: #00420C;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 28px;
-    padding-top: 35px;
-}
-
-.texto{
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    padding-top: 25px;
-    margin-left: 6px;
-}
-
-.lista{
-    margin-left: 25px;
-    padding-bottom: 25px;
-}
-
-.conceito{
-    background-color: #117A25;
-    padding-top: 25px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.conceito__titulo{
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
-    color: #FFF;
-    padding-bottom: 25px;
-}
-
-.conceito__nota{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 45px;
-    color: #FFF;
-    padding-bottom: 30px;
-}
-
-.imagem{
-    padding-top: 15px;
+.menu__caixa{
     display: flex;
-    margin: 0 auto;
 }
 
-.imagem__nome{
+.menu__item > a{    
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+}
+    .menu__item:hover{
+    background-color: #117A25;
+    }
+
+  
+/* Estrutura do Corpo da página */
+.main{
+    display: inline;  
+ }
+ @media(min-width:600px){
+    .main{
+      display: flex;
+    }
+}
+.quebra{
+    padding-left: 80px;
+}
+ @media(min-width: 600px){
+    .quebra{
+        padding-left: 0px;
+    }
+}
+ 
+/* Texto do corpo da página */
+.corpo__titulo{
     color: #00420C;
+    padding: 20px;
+    font-size: 24px;
+    margin: 30px 0px 0px;
+    font-weight: inherit;
     text-align: center;
-    font-size: 18px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 21px;
-    padding-top: 25px;
-    padding-bottom: 50px;
+ }
+ @media(min-width: 600px){
+    .corpo__titulo{
+      width: 667px;
+      font-size: 36px;
+      text-align: left;
+    }    
 }
 
+.corpo__texto{   
+    font-size: 16px;
+    margin: auto 20px;
+    padding:0;
+    line-height: 19px; 
+ }
+ @media(min-width: 600px){
+    .corpo__texto{
+        width: 667px;
+        margin-right: 200px;
+    }
+}
+.corpo__texto--item{
+    margin: auto 40px;
+    line-height: 19px;
+}
+
+  
+
+/*conceito-------------------------------------------------------------------*/
+.corpo__conceito{
+    background-color: #117A25;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 60px  auto 0;
+    width: 313px;
+    height: 159px;
+}
+@media(min-width: 600px){
+    .corpo__conceito{
+        width: 130%;
+    }
+  }
+.corpo__conceito--titulo{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.corpo__conceito--nota{
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  font-size: 38px;
+  padding: 20px;
+}
+
+
+
+
+
+/*coordenador----------------------------------------------------*/
+
+
+.corpo__coordenador{
+  text-align: center;
+  margin: 60px 0px 0px;
+}
+ @media(min-width:600px){
+    .corpo__coordenador{
+       text-align: left;
+    }
+}
+.corpo__coordenador--titulo{
+  font-size: 24px;
+  color: #00420C;
+  margin: 20px 0;
+}
+.corpo__coordenador--img{
+  width: 172px;
+  border: 2px solid #00420C;;
+  border-radius: 5px;
+}
+.corpo__coordenador--nome{
+  font-size: 18px;
+  color: #00420C;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+/*footer---------------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    text-align: center;
+    background-color: #00420C;
+    padding: 20px;
+    margin: 60px 0px 0px;
+}
+footer img{
+    width: 95px;
+    height: 114px;
+}
+.footer__texto{
+  color: white;
+  font-size: 18px;
+  margin: 20px;
+  display: block;
+  text-align: left;
+}
+.footer__texto--campus{
+  font-weight: bold;
+}
+
+.footer__display{
+  display: inline;
+}
+@media(min-width:600px){
+  .footer__display{
+    display: flex;
+  }
+}
+
+
+
+/*tabela pagina 2*/
 .table{
-    padding-top: 25px;
-
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+.table tr{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-collapse: collapse;
+  line-height: 150%;
 }
 
-.table__header{
-    background-color: #e5e5e5;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    color: #000000;
-    padding: 4px;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    border: 1px solid #000000;
+.table td{
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  padding-left: 10px;
+  text-align: left;
+}
+.table th{
+  background: #E5E5E5;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  padding-left: 1%;
+  text-align: left;
+  
 }
 
-.table__content{
-    padding: 5px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
+.titulotable{
+  color: #00420C;
+  padding: 20px;
+  font-size: 36px;
+  margin: 60px 0px 0px;
 }
 
-.border{
-    border: 1px solid #000000;
-    border-top: 0;
-    border-bottom: 0;
+@media(max-width:600px){
+  .titulotable{
+    font-size: 24px;
+  }
+  .table tr{
+    width: 100%;
+    padding-left: 5%;
+    
+  }
+ .table{
+   width: 95%;
+   
+ }
+ 
 }
 
 
-.helper{
-    border-bottom: 1px solid #000000;
+/*professores---------------------------------------------------------*/
+.professor{
+  padding-left: 10px;
+  display: flex;
+  padding-top: 40px;
+}
+.professor__img{
+  border: 2px solid #00420C;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  width: 114px;
+  height: 114px;
+  
 }
 
 .professor__nome{
-    color: #00420C;
-    font-size: 18px;
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    padding-left: 10px;
+  font-size: 18px;
+  color: #00420C;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+.professor__lattes{
+  padding-left: 20px;
+  width: 120%;
+  
 }
 
-.professor__image{
-    display: inline-block;
-    justify-content: flex-start;
+/*pagina contato-------------------------------------------*/
+form{
+  padding-left: 20px;
+  padding-top: 30px;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+}
+form label{
+  color: #00420C;
+}
+.form__input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px #00420C solid;
+  width: 50%;
+  padding-top: 20px;
 }
 
-.professor__link{
-    display: inline-block;
-    font-size: 12px;
+@media(max-width:600px){
+  .form__input{
+    width: 90%;
+  }
 }
 
-
-.contato{
-    border: 0;
-    width: 325px;
-    border-bottom: 2px solid #00420C;
-}
-
-.contato__label{
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #00420C;
-    display: block;
-    padding-bottom: 15px;
-}
-
-.contato__button{
-    color: white;
-    background-color: #117A25;
-    width: 325px;
-    border-radius: 5px;
+.form__botao{
+    position: absolute;
+    width: 139px;
     height: 39px;
-    font-family: 'Robot', 'sans-serif';
-    font-size: 18px;
-    line-height: 21px;
-    font-style: normal;
-    font-weight: normal;
-    border: #117A25 1px solid;
+    background-color: #117A25;
+    left: 50%;
+    color: white;
+    border-radius: 5px;
 }
-
-/* --- RODAPÉ --- */
-
-.rodape{
-    background-color: #00420C;
-}
-
-.endereco{
-    padding-top: 10px;
-    margin-left: 25px;
-    padding-bottom: 25px;
-}
-
-.rodape__titulo{
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFF;
-    text-shadow: 0px 4px 4px #00000040;
-}
-
-.rodape__texto{
-    font-family: 'Roboto', 'sans-serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #F2F2F2;
-    text-shadow: 0px 2px 2px #00000040;
-
+@media(max-width:600px){
+    .form__botao{
+      width: 90%;
+      left: 10px;
+    }
+  }
 }

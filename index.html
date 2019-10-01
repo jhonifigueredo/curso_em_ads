@@ -3,72 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="IFRO - Instituto Federal de Rondônia">
+    <link href="assets/css/estilo.css" rel="stylesheet">
     <title>Análise e Desenvolvimento de Sistemas</title>
-    <!-- <link rel="icon" href="assets/images/if_vuy_icon.ico"> -->
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="menu">
-        <div class="container">
-            <div><img class="hamburguer" src="assets/images/menu.svg" alt=""> 
-                <h1 class="curso">Curso Superior de Tecnologia em</h1> 
-                <h2 class="curso-nome">Análise e Desenvolvimento de Sistemas</h2>
+    <header class="cabecalho">
+        <div class="cabecalho__mobile container">
+            <img class="cabecalho__mobile--imagem" src="assets/images/icone_menu.png" alt="menu hamburguer">
+            <div>
+                <h1 class="cabecalho__titulo">
+                    Curso Superior de Tecnologia em
+                </h1>
+                <h2 class="cabecalho__subtitulo">
+                    Análise e Desenvolvimento de Sistemas
+                </h2>
             </div>
-        </div>    
+        </div>
+        <nav>
+            <ul class="menu">
+                <div class="menu__caixa container">
+                    <li class="menu__item"> <a href="index.html">Inicio</a> </li>
+                    <li class="menu__item"> <a href="disciplinas.html">Disciplinas</a> </li>
+                    <li class="menu__item"> <a href="professores.html">Professores</a> </li>
+                    <li class="menu__item"> <a href="contato.html">Contato</a> </li>
+                </div>
+            </ul>
+        </nav>
     </header>
 
-    <section class="container">
-        <h1 class="titulo">Perfil profissional de conclusão</h1>
-        <p class="texto">Analisa, projeta, desenvolve, testa, implanta e mantém sistemas computacionais de informação. Avalia, seleciona, especifica e utiliza metodologias e ferramentas da Engenharia de Software, linguagens de programação e bancos de dados. Coordena equipes de produção de softwares. Vistoria, realiza perícia, avalia, emite laudo e parecer técnico em sua área de formação.</p></br>
-    </section>
-    <section class="container">
-        <h1 class="titulo">Campo de atuação</h1>
-            <div class="texto">
-                <p>Empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria.</p>
-                <p>Empresas de tecnlogia.</p>
-                <p>Empresas em geral(indústria, comércio e serviços).</p>
-                <p>Organizações não-governamentais.</p>
-                <p>Órgãos públicos.</p>
-                <p>Institutos e centros de pesquisa.</p>
-                <p>Instituições de Ensino, mediante formação requerida pela legislação vigente.</p><br>
-            </div>
-    </section>
-    <section class="container">
-        <h1 class="titulo">Processo seletivo</h1>
-        <div class="texto">
-            <p>Entrada anual:</p>
-            <ul class="lista">
-                <li>20 vagas através da nota do ENEM</li>
-                <li>20 vagas através da nota do Ensino Médio</li>
-            </ul>
-        </div>
-    </section>
-    <section class="container">
-        <div class="conceito">
-            <h1 class="conceito__titulo">Conceito do curso</h1> 
-                <p class="conceito__nota">4</p>
-        </div>
-    </section>
-    <section class="container">
-        <h1 class="titulo">Coodernador</h1>
-            <img class="imagem" src="assets/images/image.png" alt="">
-        <h2 class="imagem__nome"> Prof.° Juliano Fisher Naves</h2>
-    </section>
+    <main class="container main">
+        <div>
+            <section class="container">
+                <h1 class="corpo__titulo">Perfil profissional de conclusão</h1>
+                <p class="corpo__texto">
+                    Analisa, projeta, desenvolve, testa, implanta e mantém sistemas computacionais de informação. Avalia, seleciona, especifica e utiliza metodologias, tecnologias e ferramentas da Engenharia de Software, linguagens de programação e bancos de dados. Coordena equipes de produção de softwares. Vistoria, realiza perícia, avalia, emite laudo e parecer técnico em sua área de formação
+                </p>
+            </section>
 
-    <footer class="rodape">
-        <div class="container">
-            <img class="imagem" src="assets/images/logo-ifro-branco.png" alt="">
-            <br>
-            <div class="endereco">
-                <h1 class="rodape__titulo">IFRO Campus Vilhena</h1>
-                    <p class="rodape__texto">Endereço: Rodovia BR-174, Km 3 S/n</p>
-                    <p class="rodape__texto">Zona Urbana, Vilhena-RO, 76980-000</p>
-                    <p class="rodape__texto">Telefone: (69)2101-0700</p>
-                <br>
+            <section class="container">
+                <h1 class="corpo__titulo">
+                    Campo de atuação
+                </h1>
+                <p class="corpo__texto">Empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria.</p>
+                <p class="corpo__texto">Empresas de tecnologia.</p>
+                <p class="corpo__texto">Empresas em geral (indústria, comércio e serviços).</p>
+                <p class="corpo__texto">Organizações não-governamentais.</p>
+                <p class="corpo__texto">Órgãos públicos.</p>
+                <p class="corpo__texto">Institutos e Centros de Pesquisa.</p>
+                <p class="corpo__texto">Instituições de Ensino, mediante formação requerida pela legislação vigente.</p>   
+            </section>
+
+            <section class="container">
+                <h1 class="corpo__titulo">Processo seletivo</h1>
+                <ul>
+                    <p class="corpo__texto">Entrada anual:</p> 
+                    <li class="corpo__texto--item corpo__texto">20 vagas através da nota do ENEM</li>
+                    <li class="corpo__texto--item corpo__texto">20 vagas através da nota do Ensino Médio</li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="quebra">
+            <section >
+                <div class="corpo__conceito">
+                    <p class="corpo__conceito--titulo">Conceito do Curso</p>
+                    <p class="corpo__conceito--nota">4</p>
+                </div>
+            </section>
+
+            <section class="corpo__coordenador">
+                <p class="corpo__coordenador--titulo">Coordenador</p>
+                <img class="corpo__coordenador--img" src="assets/images/juliano-naves.jpg" alt="Coordenador da disciplina">
+                <p class="corpo__coordenador--nome">Prof.º Juliano Fisher Naves</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer__display">
+            <img src="assets/images/ifro-branco.png" alt="logo do IFRO">
+            <div class="footer__texto">
+                <p class="footer__texto--campus">IFRO Campus Vilhena</p>
+                <p>Endereço: Rodovia BR-174, Km 3 S/n Zona Urbana, Vilhena - RO, 76980-000</p>
+                <p>Telefone: (69) 2101-0700</p>
             </div>
-        </div>  
+        </div>
     </footer>
 </body>
 </html>
